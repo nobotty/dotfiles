@@ -50,3 +50,10 @@ nnoremap Y y$
 set noshowmatch
 "<C-l> : 画面更新時に検索ハイライトを消す
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+"タグジャンプを行う (タグファイルを:!ctags -R で生成)
+"set tags=./tags
+"plug.vim によるプラグイン導入 (:PlugInstall)
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+call plug#end()

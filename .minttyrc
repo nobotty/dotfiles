@@ -1,0 +1,6 @@
+BoldAsFont=-1
+Font=ＭＳ ゴシック
+FontHeight=11
+CursorType=block
+CursorBlinks=no
+Term=xterm-256color
