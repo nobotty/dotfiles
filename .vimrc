@@ -52,8 +52,18 @@ set noshowmatch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 "タグジャンプを行う (タグファイルを:!ctags -R で生成)
-"set tags=./tags
+set tags=./tags
+
+"netrw: ツリー表示に変更する
+let g:netrw_liststyle = 3
+"netrw: 上部バナーを非表示にする
+let g:netrw_banner = 0
+"netrw: 左右分割を右側に開く
+let g:netrw_altv = 1
+"netrw: 分割で開いた時のサイズ (%)
+let g:netrw_winsize = 85
+
 "plug.vim によるプラグイン導入 (:PlugInstall)
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree'
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"Plug 'scrooloose/nerdtree'
+"call plug#end()
