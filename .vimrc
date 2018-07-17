@@ -41,15 +41,27 @@ set statusline+=%=%l,%c%V%8P
 "タブの幅
 set tabstop=4
 set shiftwidth=4
+"タブをスペースに展開しない
+set noexpandtab
 "指定行数分を余裕を持たせてスクロールする
 set scrolloff=3
 "括弧入力時に対応する括弧を表示しない
+set noshowmatch
+"行番号を表示
+set number
 
 "Y : 行末までヤンク
 nnoremap Y y$
 set noshowmatch
 "<C-l> : 画面更新時に検索ハイライトを消す
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+"ノーマルモードのままスペース挿入
+"nnoremap <Space> i<Space><Esc>l
+"挿入モードでemacs風のカーソル移動
+"imap <C-p> <Up>
+"imap <C-n> <Down>
+"imap <C-b> <Left>
+"imap <C-f> <Right>
 
 "タグジャンプを行う (タグファイルを:!ctags -R で生成)
 set tags=./tags
