@@ -52,7 +52,6 @@ set number
 
 "Y : 行末までヤンク
 nnoremap Y y$
-set noshowmatch
 "<C-l> : 画面更新時に検索ハイライトを消す
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "ノーマルモードのままスペース挿入
