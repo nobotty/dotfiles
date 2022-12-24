@@ -1,0 +1,29 @@
+"インクリメンタルサーチを行う
+set incsearch
+"小文字検索時に大文字小文字を区別しない
+set ignorecase
+"大文字検索時に大文字小文字を区別する
+set smartcase
+"検索文字をハイライト表示しない
+set nohlsearch
+"検索時にファイルの最後まで行ったら最初に戻る
+set wrapscan
+"タブの幅
+set tabstop=4
+set shiftwidth=4
+"タブをスペースに展開しない
+set noexpandtab
+"指定行数分を余裕を持たせてスクロールする
+set scrolloff=3
+
+"Y : 行末までヤンク
+nnoremap Y y$
+"<C-l> : 画面更新時に検索ハイライトを消す
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+"ノーマルモードのままスペース挿入
+"nnoremap <Space> i<Space><Esc>l
+"挿入モードでemacs風のカーソル移動
+"imap <C-p> <Up>
+"imap <C-n> <Down>
+"imap <C-b> <Left>
+"imap <C-f> <Right>
