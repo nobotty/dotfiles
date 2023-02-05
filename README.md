@@ -1,4 +1,4 @@
 # dotfiles
 
 install git for windows  
-install vim  
+install vim or neovim
