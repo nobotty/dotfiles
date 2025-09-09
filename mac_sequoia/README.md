@@ -2,7 +2,11 @@
 Setting for Mac OS Sequoia (MacBook Air 10,1)
 
 # Installed
-- homebrew
 - iTerm2
-- neovim
-- tmux
+- homebrew
+- Xcode
+
+# Installed by homebrew
+- brew install neovim
+- brew install tmux
+- brew install go
